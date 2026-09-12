@@ -70,7 +70,7 @@ tmux -f /mnt/workspace/your-user/.tmux.conf new -A -s main
 
 ## 右下角 CPU / 内存
 
-示例：`CPU 12% MEM 34% | 2026-09-12 18:00 hostname`。
+右下角只显示 CPU 和内存，例如 `CPU 12% MEM 34%`。
 
 - **CPU**：`/proc/stat` 全部逻辑 CPU 的平均利用率，范围 0–100%，不是负载均值。按两次采样的计数差计算；idle 和 iowait 视为空闲，guest 时间不重复累加。
 - **MEM**：`(MemTotal - MemAvailable) / MemTotal`，避免把所有可回收缓存都算成内存压力。

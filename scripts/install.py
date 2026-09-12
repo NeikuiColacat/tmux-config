@@ -83,8 +83,7 @@ def main():
     else:
         profile = (repo / "profiles/auto.conf").read_text()
     stats_command = shlex.join([sys.executable, str(stats_file)])
-    status = ("#[fg=#6c6f85,nobold] #(" + stats_command + ") | %Y-%m-%d "
-              "#[fg=#4c4f69]%H:%M #[fg=#4c4f69,bg=#dce0e8,bold] #h #[default]")
+    status = "#[fg=#6c6f85,nobold] #(" + stats_command + ") #[default]"
     config = (repo / "tmux.conf").read_text()
     for token, value in {"MAIN_CONFIG": main_config, "STATUS_RIGHT": status,
                          "TERMINAL_CONFIG": terminal_config, "LOCAL_CONFIG": local_config}.items():
