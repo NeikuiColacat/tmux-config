@@ -1,0 +1,8 @@
+# 合并到 ~/.codex/config.toml 已有的 [tui] 表，不要覆盖整个配置。
+# 在本机 codex-cli 0.154.0 核对过；旧版本需先确认支持这些字段。
+[tui]
+theme = "catppuccin-latte"
+animations = true
+notifications = ["agent-turn-complete"]
+notification_method = "bel"
+notification_condition = "always"
