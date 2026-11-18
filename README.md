@@ -107,6 +107,8 @@ python3 ~/.config/tmux-config/scripts/system-stats.py
 
 保留默认 `Ctrl+B` 前缀、鼠标、焦点事件和 50,000 行历史。复制到本机系统剪贴板还取决于终端的 OSC 52 支持。`Alt+左右` 已被 tmux 占用，窗格内的 Codex / shell 不会收到这两个按键。
 
+在复制模式中按住鼠标左键拖选，松开即复制，清除高亮并显示 `Copied`。可以继续浏览历史，按 `q` 退出复制模式。
+
 例如取消这两个直接绑定，可在 `~/.tmux.conf.local` 中写入：
 
 ```tmux
